@@ -42,15 +42,17 @@ DATA = {
 }
 
 
+CATEGORY_NAMES = list(DATA.keys())
+
+
 # Start command handler
 @bot.message_handler(commands=["start"])
 def start(message):
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
 
     # Додаємо кнопки категорій
-    markup.add(types.KeyboardButton("Банки"))
-    markup.add(types.KeyboardButton("Аптеки"))
-    markup.add(types.KeyboardButton("Лікарні"))
+    for category in CATEGORY_NAMES:
+        markup.add(types.KeyboardButton(category))
 
     # Відправляємо повідомлення
     bot.send_message(message.chat.id, "Виберіть категорію:", reply_markup=markup)
@@ -58,7 +60,7 @@ def start(message):
 
 # Handling button presses (categories)
 @bot.message_handler(
-    func=lambda message: message.text in ["Банки", "Аптеки", "Лікарні"]
+    func=lambda message: message.text in CATEGORY_NAMES
 )
 def category_selected(message):
     category = message.text
