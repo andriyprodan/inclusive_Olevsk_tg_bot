@@ -11,17 +11,33 @@ bot = telebot.TeleBot(TOKEN)
 
 # Data for categories and corresponding Google Drive links
 DATA = {
-    "Банки": {
-        "Банк 1": "https://drive.google.com/folder_bank1",
-        "Банк 2": "https://drive.google.com/folder_bank2",
+    "Освіта": {
+        "Олевський ліцей № 1": "https://drive.google.com/folder_bank1",
+        "Олевський ліцей № 2": "https://drive.google.com/folder_bank2",
+        "Олевський ліцей № 3": "https://drive.google.com/folder_bank2",
+        "ЦДЮТ": "https://drive.google.com/folder_bank2",
+        "Мистецька школа “Олевська музична школа”": "https://drive.google.com/folder_bank2",
+        'КУ "Олевський міжшкільний ресурсний центр" Олевської міської ради': "https://drive.google.com/folder_bank2",
+        "ДНЗ «Олевський професійний ліцей»": "https://drive.google.com/folder_bank2",
     },
-    "Аптеки": {
-        "Аптека 1": "https://drive.google.com/folder_apteka1",
-        "Аптека 2": "https://drive.google.com/folder_apteka2",
+    "Медицина": {
+        'КНП "Олевський Центр ПМД" Олевської міської ради': "https://drive.google.com/folder_apteka1",
+        'Комунальна установа "Олевська центральна районна лікарня"': "https://drive.google.com/folder_apteka1",
+        'Медичний центр “IVA”': "https://drive.google.com/folder_apteka1",
+        'Медичний центр “Наш лікар”': "https://drive.google.com/folder_apteka1",
     },
-    "Лікарні": {
-        "Лікарня 1": "https://drive.google.com/folder_hospital1",
-        "Лікарня 2": "https://drive.google.com/folder_hospital2",
+    "Розваги": {
+        "Міський Будинок культури": "https://drive.google.com/folder_hospital1",
+        "Олевська публічна біблотека": "https://drive.google.com/folder_hospital2",
+        "Кафе та ресторани міста": "https://drive.google.com/folder_hospital2",
+    },
+    "Послуги": {
+        "Центр надання адміністративних послуг": "https://drive.google.com/folder_hospital1",
+        "Олевський РЕМ": "https://drive.google.com/folder_hospital2",
+        "ПриватБанк": "https://drive.google.com/folder_hospital2",
+        "ОщадБанк": "https://drive.google.com/folder_hospital2",
+        "Відділ обслуговування громадян № 4 (пенсійний фонд)": "https://drive.google.com/folder_hospital2",
+        "Олевське управління Коростенської філії Житомирського ОЦЗ": "https://drive.google.com/folder_hospital2",
     },
 }
 
