@@ -1,6 +1,6 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv(override=False)
+# load_dotenv(override=False)
 
 TOKEN = os.getenv("TG_TOKEN")
