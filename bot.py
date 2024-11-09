@@ -84,4 +84,5 @@ def help_command(message):
 
 # Run the bot
 if __name__ == "__main__":
+    print('blah')
     bot.polling(none_stop=True)
