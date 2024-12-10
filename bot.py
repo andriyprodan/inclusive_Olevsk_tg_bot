@@ -84,4 +84,12 @@ def help_command(message):
 
 # Run the bot
 if __name__ == "__main__":
-    bot.polling(none_stop=True)
+    bot.infinity_polling(timeout=10, long_polling_timeout = 5)
+
+    # while True:
+    #     try:
+    #         bot.polling(non_stop=True, interval=0)
+    #     except Exception as e:
+    #         print(e)
+    #         time.sleep(5)
+    #         continue
